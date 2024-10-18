@@ -1,0 +1,13 @@
+/* mixins.scss */
+
+/* Mixin for Gradient Text */
+@mixin gradient-text($gradient) {
+    background-color: #fff;
+    background-image: $gradient;
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+  

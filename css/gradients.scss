@@ -1,0 +1,26 @@
+/* gradients.scss */
+
+@use 'variables';
+@use 'mixins';
+
+/* Gradient Classes */
+.gradient-black-white {
+  @include mixins.gradient-text(
+    linear-gradient(
+      45deg,
+      variables.$gradient-color1 20%,
+      variables.$gradient-color2 53%,
+      variables.$gradient-color3 30%
+    )
+  );
+}
+
+.gradient-black-grey {
+  @include mixins.gradient-text(
+    linear-gradient(
+      45deg,
+      variables.$gradient-color1 10%,
+      variables.$gradient-color2 30%
+    )
+  );
+}

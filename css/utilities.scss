@@ -1,0 +1,50 @@
+@use 'variables';
+
+/* Background Colors */
+.bg-primary {
+  background-color: variables.$primary-color;
+}
+
+.bg-secondary {
+  background-color: variables.$secondary-color;
+}
+
+/* Text Colors */
+.text-primary {
+  color: variables.$primary-color;
+}
+
+.text-secondary {
+  color: variables.$secondary-color;
+}
+
+.text-white {
+  color: variables.$text-color;
+}
+
+/* Margin and Padding Utilities */
+.m-0 {
+  margin: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-small {
+  padding: variables.$padding-small;
+}
+
+/* Border Radius */
+.border-radius {
+  border-radius: variables.$border-radius;
+}
+
+/* Box Shadow */
+.box-shadow {
+  box-shadow: variables.$box-shadow-default;
+}

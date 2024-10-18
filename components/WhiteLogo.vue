@@ -1,5 +1,5 @@
 <script setup>
-import '../css/slide.css'
+import '../css/main.scss'
 import { sharedString } from '../snippets/shared-strings';
 
 
