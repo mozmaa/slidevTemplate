@@ -12,10 +12,6 @@ const props = defineProps({
     type: String,
     default: sharedString.title
   },
-  paragraphText: {
-    type: String,
-    default: sharedString.paragraphText
-  }
   });
 </script>
 
@@ -32,11 +28,12 @@ const props = defineProps({
 </template> -->
 
 <template>
-  <div class="w-full h-24 customColor flex items-center justify-between ">
-   <div class=" bg-white paper-box items-center mx-5 w-full">
-        <h1 :class= "['gradient-black-grey h1-margin-zero', uniqueClass ]">{{ title }}</h1>
+  <div class="w-full h-24 bg-transparent flex items-center justify-between absolute ">
+   <div class=" bg-white paper-box items-center mx-5 w-full ">
+        <h1 :class= "['pl-4 gradient-black-grey h1-margin-zero', uniqueClass ]">{{ title }}</h1>
+        <!-- <p class="pl-4 customP">{{ paragraphText }}</p> -->
       </div>
       <img class="w-44 h-12 pr-4"
-     src="../assets/DevelopersLogoWhite.png" alt="Logo" />
+     src="../assets/DevelopersLogo.png" alt="Logo" />
   </div>
 </template>

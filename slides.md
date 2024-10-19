@@ -51,9 +51,13 @@ transition: fade-out
      src="./assets/DevelopersLogoWhite.png" alt="Logo" />
   <div class="dim-overlay"></div>
   <h1 class="pt-10 pb-5 content">Agenda</h1>
-  <p  class="underline decoration-dotted content">What is Slidev?</p>
-  <p class="underline decoration-dotted content">Code</p>
+  <AgendaTitle title='First subject' />
+  <AgendaTitle title='Second subject' />
 </div>
+
+<script setup>
+  import AgendaTitle from './components/AgendaTitles.vue'
+</script>
 
 <style scoped>
   @import './css/slide.css'
@@ -63,13 +67,13 @@ transition: fade-out
 transition: fade-out
 ---
 
-<div>
+<div class="h-inherit">
   <WhiteLogo />
-  <div class="flex flex-row -mx-1">
-    <EnumCol class="colColor1 "
+  <div class="flex flex-row -mx-1 h-inherit">
+    <EnumCol class="gradient-grey-white-left"
              icon ="📝" 
-             title="Text-based" 
-             paragraphText="Focus on the content with Markdown, and then style them later" />
+             title="Column1" 
+             paragraphText="Text about the subject from a column title"/>
   </div>
 </div>
 
@@ -86,18 +90,17 @@ transition: fade-out
 transition: fade-out
 ---
 
-<div>
-  <WhiteLogo uniqueClass='gradient-black-white'/>
-  <div class="flex flex-row -mx-1">
-    <EnumCol class="colColor1" 
+<div class="h-inherit">
+  <WhiteLogo />
+  <div class="flex flex-row -mx-1 h-inherit">
+    <EnumCol class="gradient-grey-white-left" 
              icon ="📝" 
-             title="Text-based" 
-             paragraphText="Focus on the content with Markdown, and then style them later"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2 " 
+             title="Column1" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right " 
              icon ="🎨" 
-             title="Themable" 
-             paragraphText="Themes can be shared and re-used as npm packages"/>
+             title="Column2" 
+             paragraphText="Text about the subject from a column title"/>
   </div>
 </div>
 
@@ -114,23 +117,21 @@ transition: fade-out
 transition: fade-out
 ---
 
-<div>
-  <WhiteLogo uniqueClass='gradient-black-white'/>
-  <div class="flex flex-row -mx-1">
-    <EnumCol class="colColor1 " 
+<div class="h-inherit">
+  <WhiteLogo />
+  <div class="flex flex-row -mx-1 h-inherit">
+    <EnumCol class="gradient-grey-white-left " 
              icon ="📝" 
-             title="Text-based" 
-             paragraphText="Focus on the content with Markdown, and then style them later"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2 " 
+             title="Column1" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right " 
              icon ="🎨" 
-             title="Themable" 
-             paragraphText="Themes can be shared and re-used as npm packages"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor1 "
+             title="Column2" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-left "
              icon ="🧑‍💻" 
-             title="Developer Friendly" 
-             paragraphText="Code highlighting, live coding with autocompletion" />
+             title="Column3" 
+             paragraphText="Text about the subject from a column title"/>
   </div>
 </div>
 
@@ -147,28 +148,25 @@ transition: fade-out
 transition: fade-out
 ---
 
-<div>
-  <WhiteLogo uniqueClass='gradient-black-white'/>
-  <div class="flex flex-row -mx-1">
-    <EnumCol class="colColor1 " 
+<div class="h-inherit">
+  <WhiteLogo />
+  <div class="flex flex-row -mx-1 h-inherit">
+    <EnumCol class="gradient-grey-white-left " 
              icon ="📝" 
-             title="Text-based" 
-             paragraphText="Focus on the content with Markdown, and then style them later"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2 " 
+             title="Column1" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right " 
              icon ="🎨" 
-             title="Themable" 
-             paragraphText="Themes can be shared and re-used as npm packages"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor1 " 
+             title="Column2" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-left " 
              icon ="🧑‍💻" 
-             title="Developer Friendly" 
-             paragraphText="Code highlighting, live coding with autocompletion"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2 " 
+             title="Column3" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right " 
              icon ="🤹" 
-             title="Interactive" 
-             paragraphText="Embed Vue components to enhance your expressions"/>
+             title="Column4" 
+             paragraphText="Text about the subject from a column title"/>
   </div>
 </div>
 
@@ -185,33 +183,29 @@ transition: fade-out
 transition: fade-out
 ---
 
-<div>
-  <WhiteLogo uniqueClass='gradient-black-white'/>
-  <div class="flex flex-row -mx-1">
-    <EnumCol class="colColor1 " 
+<div class="h-inherit">
+  <WhiteLogo />
+  <div class="flex flex-row -mx-1 h-inherit">
+    <EnumCol class="gradient-grey-white-left " 
              icon ="📝" 
-             title="Text-based" 
-             paragraphText="Focus on the content with Markdown, and then style them later"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2 " 
+             title="Column1" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right " 
              icon ="🎨" 
-             title="Themable" 
-             paragraphText="Themes can be shared and re-used as npm packages"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor1 " 
+             title="Column2" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-left " 
              icon ="🧑‍💻" 
-             title="Developer Friendly" 
-             paragraphText="Code highlighting, live coding with autocompletion"/>
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor2  "
+             title="Column3" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-right  "
              icon ="🤹" 
-             title="Interactive" 
-             paragraphText="Embed Vue components to enhance your expressions" />
-    <!-- <div class="w-0.5 bg-white"></div> -->
-    <EnumCol class="colColor1 " 
+             title="Column4" 
+             paragraphText="Text about the subject from a column title"/>
+    <EnumCol class="gradient-grey-white-left " 
              icon ="🎥" 
-             title="Recording" 
-             paragraphText="Built-in recording and camera view"/>
+             title="Column5" 
+             paragraphText="Text about the subject from a column title"/>
   </div>
 </div>
 
@@ -224,22 +218,36 @@ transition: fade-out
   @import './css/slide.css'
 </style>
 
+---
 
+<div class="backgroundBlue h-inherit flex justify-center items-center">
+  <img class="absolute top-8 left-3 w-44 h-12"
+     src="./assets/DevelopersLogo.png" alt="Logo" />
+  <div class="gradient-circle text-center flex flex-col justify-center items-center">
+    <h1 class='text-black'>Title of a new subject</h1>
+    <p class='text-black'>This PR was made to refactor and modularize the CSS codebase. By separating components, utilities, and variables into their respective files, we achieve better maintainability, scalability, and easier collaboration for future changes and enhancements. Additionally, we added support for custom gradients and utility classes to improve code reuse across different components.</p>
+  </div>
+  <img  class="absolute bottom-2 right-2 w-48 h-64"
+      src="./assets/DevelopersRobot.png" alt="Robot" />
+</div>
+
+<style>
+ @import './css/slide.css'
+</style>
 
 ---
 
-<div class="colColor1 h-inherit">
-  <WhiteLogo uniqueClass="customP"
-             title="Code"
+<div class="gradient-grey-white-left h-inherit justify-center items-center relative">
+  <WhiteLogo title="Code"
              paragraphText="Use code snippets and get the highlighting directly, and even types hover!"/>
-  <div class="flex-container flex w-full mt-10 mr-10">
+  <div class="flex-container div-padding-top flex w-full justify-center items-center">
     <div class="text-white text-center flex-1">
       <h1>Code explanation</h1>
       <p> // TwoSlash enables TypeScript hover information<br>
           // and errors in markdown code blocks <br>
           // More at https://shiki.style/packages/twoslash</p>
     </div>
-  <div class="code-container w-max  bg-transparent rounded mr-10 text-xs flex-1 code-block-shadow">
+  <div class="code-container w-max bg-transparent rounded mr-10 text-xs flex-1 code-block-shadow ">
 
   ```ts {all} twoslash
   //comments
@@ -263,12 +271,10 @@ transition: fade-out
 
 ---
 
-<div class="colColor1 h-inherit">
-  <WhiteLogo uniqueClass="customP"
-             title="Code"
-             paragraphText="Use code snippets and get the highlighting directly, and even types hover!"/>
-  <div class="flex-container flex w-full">
-  <div class="code-container mt-10 ml-10 w-max bg-transparent rounded flex-1 code-block-shadow">
+<div class="gradient-grey-white-right h-inherit">
+  <WhiteLogo title="Code"/>
+  <div class="flex-container div-padding-top flex w-full justify-center items-center">
+  <div class="code-container  ml-10 w-max bg-transparent rounded flex-1 code-block-shadow ">
 
   ```ts {all} twoslash 
   //comments
@@ -298,12 +304,114 @@ transition: fade-out
 
 ---
 
-# Themes
+<div class="h-inherit background-blue z-0">
+  <img  class="absolute bottom-20 right-95 w-48 h-64 skew-x--24"
+      src="./assets/DevelopersRobot.png" alt="Robot" />
+  <div class="absolute bg-transparent w-40% h-50% top-2 right-2 z-30">
+    <div class="flex flex-col justify-start items-center text-center p-40">
+    <h1 class="text-black">Another way to change subject</h1>
+    <p class="text-black">Description or some notes</p>
+    </div>
+  </div>
+  <div class="h-inherit">
+      <div class="grid-container">
+        <div class="block"></div>
+        <div class="block block-3d "></div>
+      </div>
+      <div class="grid-container">
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block block-3d"></div>
+      </div>
+      <div class="grid-container">
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block "></div>
+        <div class="block block-3d"></div>
+      </div>
+      <div class="grid-container">
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block block-3d "></div>
+      </div>
+      <div class="grid-container">
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block "></div>
+        <div class="block"></div>
+        <div class="block "></div>
+        <div class="block block-3d "></div>
+        <div class="block opacity-0 "></div>
+        <div class="block opacity-0 "></div>
+        <div class="block block-3d ">
+          <img class=" content p-2"
+           src="./assets/DevelopersLogoWhite.png" alt="Logo" />
+        </div>
+      </div>
+  </div>
+</div>
 
+<style>
+ @import './css/slide.css'
+</style>
 
 ---
 
-## class: px-20
+<div class="h-inherit flex flex-col justify-center">
+  <div class="block block-3d">
+  <span class="block-content">3D Block</span>
+  </div>
+</div>
+
+<style>
+ .block {
+  position: relative;
+  background-color: #3CAEA8; /* Main block color */
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  border: 1px solid #8b8b8b;
+  text-align: center;
+  line-height: 150px; /* Vertically center the text */
+  font-weight: bold;
+  color: white;
+}
+
+.block-3d::before,
+.block-3d::after {
+  content: '';
+  position: absolute;
+  background-color: #406866; /* Darker color for the sides */
+  /* z-index: -1; */
+}
+
+/* Right side (depth effect) */
+.block-3d::before {
+  border: 1px solid #8b8b8b;
+  top: -17px;
+  right: -32px;
+  width: 31px;
+  height: 102%;
+  transform: skewY(-45deg); /* Tilted for the 3D effect */
+}
+
+/* Bottom side (depth effect) */
+.block-3d::after {
+  border: 1px solid #8b8b8b;
+  top: -32px;
+  left: 15px;
+  width: 101%;
+  height: 31px;
+  transform: skewX(-45deg); /* Tilted for the 3D effect */
+}
+</style>
+
+---
+class: px-20
+---
+
 
 # Themes
 

@@ -1,9 +1,17 @@
 .customColor{
     background: #37474F;
   }
+
+  .background-blue{
+    background: rgba(60, 174, 168, 1)100% 
+  }
   
   div {
     padding: 0;
+  }
+
+  .div-padding-top {
+    padding-top: 15% !important;
   }
 
   .h1-margin-zero{
@@ -11,8 +19,8 @@
   }
   
   .gradient-black-white {
-    background-color: #FFFFFF;
-    background-image: linear-gradient(45deg, #121212 20%, #8d8b8b 53%, #a19f9f 30%);
+    /* background-color: #FFFFFF; */
+    background-image: linear-gradient(45deg, #121212 10%, #8d8b8b 53%, #a19f9f 30%);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -22,7 +30,7 @@
   }
 
   .gradient-black-grey {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     background-image: linear-gradient(45deg, #121212 10%, #8d8b8b 30%);
     background-size: 100%;
     background-clip: text;
@@ -32,15 +40,19 @@
     -moz-text-fill-color: transparent;
   }
   
+  .backgroundBlue {
+    background-color: #3CAEA8;
+  }
+  
   .customP {
     color: #9BA3A7
   }
   
-  .colColor1 {
-    background: linear-gradient(33deg, #37474F 60%,  #FFFFFF);
+  .gradient-grey-white-left {
+    background: linear-gradient(33deg, #37474F 40%,  #FFFFFF);
   }
-  .colColor2 {
-    background: linear-gradient(-33deg, #37474F 60%,  #FFFFFF);
+  .gradient-grey-white-right {
+    background: linear-gradient(-33deg, #37474F 40%,  #FFFFFF);
   }
 
   .full-screen-background-agenda {
@@ -104,3 +116,63 @@
 
     justify-content: center; 
   }
+
+  .gradient-circle {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    background: radial-gradient(circle, 
+      rgba(255, 255, 255, 0.8) 20%,  
+      rgba(60, 174, 168, 0.8) 50%,  
+      rgba(60, 174, 168, 1)100%    
+    );
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
+    height: 20%; 
+    gap: 0;
+  }
+
+  .block {
+    position: relative;
+    background-color: #37474F; 
+    border: 1px solid white;
+    z-index: 1;
+  }
+
+  .block-3d::before,
+.block-3d::after {
+  content: '';
+  position: absolute;
+  background-color: #303c42; 
+}
+
+.block-3d::before {
+  border: 1px solid white;
+  top: -16px;
+  right: -32px;
+  width: 31px;
+  height: 102%;
+  transform: skewY(-45deg);
+  z-index: -1;
+}
+
+
+.block-3d::after {
+  border: 1px solid white;
+  top: -32px;
+  left: 14px;
+  width: 103%;
+  height: 31px;
+  transform: skewX(-45deg);
+  z-index: -1;
+}
