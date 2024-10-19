@@ -4,6 +4,10 @@
     @apply -mt-2 font-serif;
   }
 
+  p {
+    @apply font-serif;
+  }
+
   p + h2, ul + h2, table + h2 {
     @apply mt-10;
   }
