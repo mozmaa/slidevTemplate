@@ -38,7 +38,7 @@ const props = defineProps({
         <h1 :class= "['pl-4 text-black h1-margin-zero', uniqueClass ]">{{ title }}</h1>
         <!-- <p class="pl-4 customP">{{ paragraphText }}</p> -->
       </div>
-      <img class="w-44 h-12 pr-4"
+      <img class="w-44 pr-4"
      :src="logo" alt="Logo" />
   </div>
 </template>

@@ -25,7 +25,7 @@ overviewSnapshots: true
 ---
 
 <div >
-  <img class="absolute top-8 left-3 w-44 h-12"
+  <img class="absolute top-8 left-3 w-44"
      src="./assets/DevelopersLogo.png" alt="Logo" />
   
   <h1> Welcome to Slidev </h1>
@@ -47,7 +47,7 @@ transition: fade-out
 ---
 
 <div class="text-center full-screen-background-agenda">
-  <img class="absolute top-8 left-3 w-44 h-12 content"
+  <img class="absolute top-8 left-3 w-44 content"
      src="./assets/DevelopersLogoWhite.png" alt="Logo" />
   <div class="dim-overlay"></div>
   <h1 class="pt-10 pb-5 content">Agenda</h1>
